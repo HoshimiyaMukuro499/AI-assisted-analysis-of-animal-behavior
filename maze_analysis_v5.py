@@ -23,7 +23,7 @@ rcParams['axes.unicode_minus'] = False
 
 # ===== 参数 =====
 LIKELIHOOD_THRESHOLD = 0.6
-DATA_DIR = Path(r"D:\文件\大一下\AI Eth 实验\Ttrap")
+DATA_DIR = Path(__file__).parent  # 脚本所在目录（可移植）
 
 # ----- 自动版本号：扫描已有目录，递增 -----
 existing_dirs = list(DATA_DIR.glob("analysis_output_v*"))

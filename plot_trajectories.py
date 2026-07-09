@@ -21,7 +21,7 @@ rcParams['axes.unicode_minus'] = False
 LIKELIHOOD_THRESHOLD = 0.6  # 置信度阈值，低于此值认为该部位缺失
 
 # 获取文件列表
-data_dir = Path(r"D:\文件\大一下\AI Eth 实验\Ttrap")
+data_dir = Path(__file__).parent  # 脚本所在目录（可移植）
 files = sorted([f for f in data_dir.glob("*.h5")])
 print(f"共找到 {len(files)} 个文件")
 

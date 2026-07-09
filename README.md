@@ -130,10 +130,12 @@ else:
 pip install h5py numpy matplotlib
 ```
 
+> **可移植性**：所有脚本使用 `Path(__file__).parent` 定位数据目录，无需修改任何路径。将整个项目文件夹复制到任意位置即可运行。
+
 ### 4.2 一键运行
 
 ```bash
-cd "D:\文件\大一下\AI Eth 实验\Ttrap"
+cd <项目目录>
 python maze_analysis_v5.py
 ```
 
